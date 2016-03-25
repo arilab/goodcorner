@@ -2,7 +2,7 @@ package com.goodcorner.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.time.LocalDate;
 
 /**
  * Created by alainlay1 on 25/03/16.
@@ -14,7 +14,7 @@ public class Ad implements Serializable {
     private String title;
     private String description;
     private BigDecimal price;
-    private Date creationDate;
+    private LocalDate creationDate;
     private String name;
     private String email;
 
@@ -50,11 +50,11 @@ public class Ad implements Serializable {
         this.price = price;
     }
 
-    public Date getCreationDate() {
+    public LocalDate getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
+    public void setCreationDate(LocalDate creationDate) {
         this.creationDate = creationDate;
     }
 
