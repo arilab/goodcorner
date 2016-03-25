@@ -15,6 +15,7 @@ import java.time.LocalDate;
 @Service("adService")
 @Transactional
 public class AdService {
+
     @Autowired
     private AdDao adDao;
 
